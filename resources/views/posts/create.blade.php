@@ -13,7 +13,7 @@
             @csrf
             <div class='title'>
                 <h2>Title</h2>
-                <input type='text' namepost[title] placeholder='title'>
+                <input type='text' name='post[title]' placeholder='title'>
             </div>
             <div class='body'>
                 <h2>Body</h2>
