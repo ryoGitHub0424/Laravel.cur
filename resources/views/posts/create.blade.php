@@ -9,6 +9,15 @@
     <body>
         <h1>Blog Name</h1>
         
+        <div class='category'>
+            <h2>Category</h2>
+            <select name='post[category_id'>
+                @foreach($categories as $category)
+                  <option value="{{ $category->id}}">{{$category->name}}</option>
+                @endforeach
+            </select>
+        </div>
+        
         <form action='/posts' method='POST'>
             @csrf
             <div class='title'>
