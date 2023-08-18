@@ -7,12 +7,17 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+        
+        
+        
         <h1 class='title'>{{$post->title}}</h1>
         <div class='content'>
             <div class='content_post'>
                 <h3>Sentence</h3>
                 <p class='body'>{{$post->body}}</p>
+                <a href=''>{{$post->category->name}}</a>
             </div>
+            
              <div class='edit'>
                 <a href='/posts/{{$post->id}}/edit'>edit</a>
             </div>
